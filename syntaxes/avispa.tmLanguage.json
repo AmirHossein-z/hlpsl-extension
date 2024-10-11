@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "avispa",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.avispa",
+          "match": "\\b(accept|agent|authentication_on|bool|channel|composition|cons|const|def|delete|dy|end|exp|goal|hash|hash_func|iknows|in|init|intruder_knowledge|inv|local|message|nat|new|not|ota|owns|played_by|protocol_id|public_key|request|role|secrecy_of|secret|set|start|symmetric_key|text|transition|weak_authentication_on|witness|wrequest|xor)\\b"
+        },
+        {
+          "name": "comment",
+          "match": "%.*"
+        },
+        {
+          "name": "variable",
+          "match": "[A-Z][A-Za-z0-9_]*"
+        },
+        {
+          "name": "constant",
+          "match": "[a-z][A-Za-z0-9_]*"
+        },
+        {
+          "name": "constant.numeric",
+          "match": " [0-9]+"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.avispa",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.avispa",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "text.hlpsl"
+}

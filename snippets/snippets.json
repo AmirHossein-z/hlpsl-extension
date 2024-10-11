@@ -1,0 +1,13 @@
+{
+  "role": {
+    "prefix": ["role"],
+    "body": [
+      "role ${1:alice}($2)\n played_by $3 def=\n\tinit $4\n\n\tlocal $5\n\n\tconst $6\n\n\ttransition\n\t$7\n\n\tcomposition\n\t$8\n\nend role"
+    ],
+    "description": "role HLSPL syntax"
+  },
+  "session": {},
+  "environment": {},
+  "goal": {},
+  "templ1": {}
+}
