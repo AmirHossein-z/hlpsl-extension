@@ -2,7 +2,7 @@
   "name": "hlpsl-autocomplete-and-snippets",
   "displayName": "HLPSL autocomplete and snippets",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -12,10 +12,13 @@
     "Snippets"
   ],
   "activationEvents": [],
+  "license": "MIT",
   "main": "./out/extension.js",
   "repository": {
-    "url": "https://github.com/AmirHossein-z/hlpsl-extension"
+    "url": "https://github.com/AmirHossein-z/hlpsl-extension",
+    "type": "git"
   },
+  "icon": "./icons/logo.png",
   "contributes": {
     "languages": [
       {
