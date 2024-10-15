@@ -4,10 +4,25 @@
     "body": [
       "role ${1:alice}($2)\n played_by $3 def=\n\tinit $4\n\n\tlocal $5\n\n\tconst $6\n\n\ttransition\n\t$7\n\n\tcomposition\n\t$8\n\nend role"
     ],
-    "description": "role HLSPL syntax"
+    "description": "role HLPSL"
   },
-  "session": {},
-  "environment": {},
-  "goal": {},
-  "templ1": {}
+  "session": {
+    "prefix": ["session"],
+    "body": [
+      "role ${1:session}($2)\ndef=\n\tlocal $5\n\n\tconst $6\n\n\tcomposition\n\t$8\n\nend role"
+    ],
+    "description": "session HLPSL"
+  },
+  "environment": {
+    "prefix": ["env"],
+    "body": [
+      "role environment()\ndef=\n\tlocal $2\n\n\tconst $3\n\n\tintruder_knowledge = {$4}\n\n\tcomposition\n\t$5\n\nend role\n\nenvironment()"
+    ],
+    "description": "environment HLPSL"
+  },
+  "goal": {
+    "prefix": ["goal"],
+    "body": ["goal\n\t$1\nend goal"],
+    "description": "goal HLPSL"
+  }
 }

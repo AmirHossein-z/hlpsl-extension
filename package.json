@@ -24,7 +24,11 @@
         "extensions": [
           ".hlpsl"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "dark": "./icons/logo.svg",
+          "light": "./icons/logo.svg"
+        }
       }
     ],
     "grammars": [
