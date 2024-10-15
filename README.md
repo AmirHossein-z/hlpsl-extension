@@ -18,6 +18,6 @@ HLPSL programming.
 - **env:** for defining a role similar to environment
 - **goal:** for defining goals for your AVISPA project
 
-### 1.0.0
+### 1.0.3
 
 initial release
