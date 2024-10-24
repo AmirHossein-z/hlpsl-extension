@@ -21,3 +21,7 @@ HLPSL programming.
 ### 1.0.2
 
 initial release
+
+### 1.0.3
+
+fix some bugs in snippets
