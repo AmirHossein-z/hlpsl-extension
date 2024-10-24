@@ -2,21 +2,21 @@
   "role": {
     "prefix": ["role"],
     "body": [
-      "role ${1:alice}($2)\n played_by $3 def=\n\tinit $4\n\n\tlocal $5\n\n\tconst $6\n\n\ttransition\n\t$7\n\n\tcomposition\n\t$8\n\nend role"
+      "role ${1:alice}($2)\n played_by $3 def=\n\n\tlocal $4\n\n\tconst $5\n\n\tinit $6\n\n\ttransition\n\t$7\n\n\tcomposition\n\t$8\n\nend role"
     ],
     "description": "role HLPSL"
   },
   "session": {
     "prefix": ["session"],
     "body": [
-      "role ${1:session}($2)\ndef=\n\tlocal $5\n\n\tconst $6\n\n\tcomposition\n\t$8\n\nend role"
+      "role ${1:session}($2)\ndef=\n\tlocal $3\n\n\tconst $4\n\n\tinit $5\n\n\tcomposition\n\t$6\n\nend role"
     ],
     "description": "session HLPSL"
   },
   "environment": {
     "prefix": ["env"],
     "body": [
-      "role environment()\ndef=\n\tlocal $2\n\n\tconst $3\n\n\tintruder_knowledge = {$4}\n\n\tcomposition\n\t$5\n\nend role\n\nenvironment()"
+      "role environment()\ndef=\n\tlocal $1\n\n\tconst $2\n\n\tinit $3\n\n\tintruder_knowledge = {$4}\n\n\tcomposition\n\t$5\n\nend role\n\nenvironment()"
     ],
     "description": "environment HLPSL"
   },
