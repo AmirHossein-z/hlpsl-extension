@@ -25,3 +25,7 @@ initial release
 ### 1.0.3
 
 fix some bugs in snippets
+
+### 1.0.4
+
+fix some security patches in dependencies
